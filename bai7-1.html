@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thumbnail</title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            /* justify-content: flex-start; */
+        }
+        .thumbnail {
+            width: calc(25% - 42px);
+            border: 1px gray solid;
+            text-align: center;
+            margin: 20px;
+            border-radius: 20px;
+            overflow: hidden;
+            transition: transform 1.5s;
+            -webkit-transition: transform 1.5s;
+            -moz-transition: transform 1.5s;
+            -o-transition: transform 1.5s;
+        }
+        .thumbnail img {
+            width: 90%;
+            margin: 5%;
+            filter: grayscale(0.8);
+            transition: filter 1.5s;
+            object-fit: cover;
+        }
+        .thumbnail h3 {
+            margin-top: -5px;
+            transition: color 1.5s;
+        }
+        .thumbnail:hover {
+            transform: scale(1.2);
+        }
+        .thumbnail:hover img {
+            filter: grayscale(0%);
+        }
+        .thumbnail:hover h3 {
+            color: greenyellow;
+        }
+        @media screen and (max-width: 800px) {
+            .thumbnail {
+                width: calc(50% - 42px);
+            }
+        }
+        @media screen and (max-width: 480px) {
+            .thumbnail {
+                width: calc(100% - 42px);
+            }
+            .thumbnail h3 {
+                font-size: 20px;
+            }
+        } 
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="thumbnail">
+            <img src="./images/b1.jpg" alt="">
+            <h3>Chùa Một Cột</h3>
+        </div>
+        <div class="thumbnail">
+            <img src="./images/b2.jpg" alt="">
+            <h3>Chùa Một Cột</h3>
+        </div>
+        <div class="thumbnail">
+            <img src="./images/b3.jpg" alt="">
+            <h3>Chùa Một Cột</h3>
+        </div>
+        <div class="thumbnail">
+            <img src="./images/b4.jpg" alt="">
+            <h3>Chùa Một Cột</h3>
+        </div>
+        <div class="thumbnail">
+            <img src="./images/b5.jpg" alt="">
+            <h3>Chùa Một Cột</h3>
+        </div>
+    </div>
+</body>
+</html>
