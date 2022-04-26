@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            margin: auto;
+            width: 100px;
+            height: 100px;
+            background-color: Crimson;
+            -webkit-animation-name: example;
+            -webkit-animation-duration: 4s; 
+            animation-name: example;
+            animation: example 4s linear infinite; 
+            position: relative;
+        }
+        @-webkit-keyframes example {
+            0% {background-color:crimson; left:0px; top:0px;}
+            25% {background-color:lightsalmon; left:200px; top:0px;}
+            50% {background-color:seagreen; left:200px; top:200px;}
+            75% {background-color:midnightblue; left:0px; top:200px;}
+            100% {background-color:indigo; left:0px; top:0px;}
+        }
+        @keyframes example {
+            0% {background-color:crimson; left:0px; top:0px;}
+            25% {background-color:lightsalmon; left:200px; top:0px;}
+            50% {background-color:seagreen; left:200px; top:200px;}
+            75% {background-color:midnightblue; left:0px; top:200px;}
+            100% {background-color:indigo; left:0px; top:0px;}
+        }
+        </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
